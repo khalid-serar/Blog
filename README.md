@@ -10,3 +10,8 @@ HTML
 CSS
 PYTHON
 Shell
+
+# Dependensies
+Flask Bootsrap, Flask WTF forms, Flask Mail, Flask Login, Flask Venv
+flask migrate
+
