@@ -1,22 +1,22 @@
 from flask_wtf import FlaskForm
 from wtforms import StringField, TextAreaField, FileField, SubmitField,TextAreaField,BooleanField
 from wtforms.validators import DataRequired, Length, Email, EqualTo, ValidationError
-from wtforms.validators import Required
+from wtforms.validators import InputRequired
 
 
 class CommentForm(FlaskForm):
-    title = StringField('Comment title', validators = [Required()])
+    title = StringField('Comment title', validators = [InputRequired()])
     comment = TextAreaField('Comment review')
     submit = SubmitField('Submit')
 
 class BlogForm(FlaskForm):
-    title = StringField('Blog title', validators = [Required()])
-    content = TextAreaField('Blog content', validators = [Required()])
+    title = StringField('Blog title', validators = [InputRequired()])
+    content = TextAreaField('Blog content', validators = [InputRequired()])
     submit = SubmitField('Submit')
 
 
 class UpdateProfile(FlaskForm):
-    bio = TextAreaField('Tell us about you.',validators = [Required()])
+    bio = TextAreaField('Tell us about you.',validators = [InputRequired()])
     submit = SubmitField('Submit')    
 
 class PostForm(FlaskForm):
