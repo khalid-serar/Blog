@@ -15,3 +15,8 @@ Shell
 Flask Bootsrap, Flask WTF forms, Flask Mail, Flask Login, Flask Venv
 flask migrate
 
+# contact details
+incase of any issues,contact me through ny email: khalidaserar@gmail.com
+
+
+
